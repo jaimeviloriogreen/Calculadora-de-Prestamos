@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Calculadora de Prestámo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="mainContent">
+        <section class="container">
+            <!-- Title -->
+            <section class="title">
+                <h1>Calculadora de Prestámo</h1>
+            </section>
+           
+            <!--Data-->
+            <section class="data-handler">
+                <section class="formSection">
+                    <form autocomplete="off" name="mainForm">
+                        <p>
+                            <label for="montoPrestamo">Monto del Prestámo</label>
+                            <input type="number" name="montoPrestamo" id="montoPrestamo" placeholder="RD$">
+                        </p>
+
+                        <p>
+                            <label for="tasaAnual">Tasa de Interés</label>
+                            <input type="number" name="tasaAnual" id="tasaAnual" placeholder="%">
+                        </p>
+
+                        <p>
+                            <label for="plazoPago">Plazo</label>
+                            <input type="number" name="plazoPago" id="plazoPago" placeholder="Meses">
+                            <small>*El plazo debe ser mensual</small>
+                        </p>
+
+                        <div class="btnSection">
+                            <input class="btnCalcular" type="submit" value="Calcular" name="btnSubmit">
+                        </div>
+                    </form>
+                </section>
+
+                <section class="sectionResult">
+                    <table id="mainTable"></table>
+                </section>
+                
+        </section>
+    </main>
+    <!-- Script -->
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

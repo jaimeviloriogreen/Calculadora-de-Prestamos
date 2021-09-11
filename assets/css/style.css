@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Redressed&family=RocknRoll+One&display=swap');
+:root{
+    --color1: #ffffff;
+    --color2: #000000;
+    --color3: #dcdcdc;
+     
+    --color4: #db514d;
+    --color5: #0f7fae;
+    --color6: #676378;
+    --color7: #ead76b;
+     
+    --fuente1:'RocknRoll One', sans-serif;
+    --fuente2: 'Redressed', cursive;
+    --fuente3: 'Montserrat', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family:sans-serif
+}
+.container{
+    width: 90%;
+    max-width: 62.5rem;
+    margin: 3.125rem auto;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+h1{
+    font-family: var(--fuente1);
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    line-height: 1.125;
+    text-align: center;
+}
+.data-handler{
+    width: 100%;
+    height: 100%;
+}
+/* Form Section */
+.formSection{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #9a9a9a;
+    border-radius: 3px;
+    padding: 2rem;
+}
+.formSection{margin-bottom: 2rem;}
+
+form[name="mainForm"]{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap; 
+}
+
+form[name="mainForm"] p{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1rem 0rem;
+} 
+form[name="mainForm"] small{
+    padding: .5rem;
+} 
+
+form[name="mainForm"] p label{
+    margin-bottom: .25rem;
+    font-family: var(--fuente3);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+} 
+
+input[type="number"]{
+    font-size: 1.25rem;
+    padding: .65rem 1rem;
+    border: 1px solid #a9a8a9;
+    border-radius: 3px;
+    font-family: var(--fuente3);
+    font-weight: 500;
+}
+
+.btnCalcular{
+    font-size: 1rem;
+    padding: .75rem 1rem;
+    background-color: var(--color5);
+    border: none;
+    border-radius: 3px;
+    color: var(--color1);
+    font-family: var(--fuente3);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.btnLimpiar{background-color: var(--color4);}
+
+.btnSection{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-end;
+}
+.sectionResult{
+    overflow-x: scroll;
+}
+#mainTable{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+#mainTable th{
+    background-color: rgba(5, 15, 32, 0.678);
+    padding: .5rem;
+    font-size: 1rem;
+    font-family: var(--fuente1); 
+    color: var(--color1);
+    text-align: start;
+}
+
+#mainTable td{
+    padding: .5rem;
+    font-family: sans-serif;
+}
+#mainTable tbody tr{border-bottom: 1px solid rgba(97, 97, 97, 0.431)}
+#mainTable tbody tr:nth-child(even){
+    background-color: #1a5b753b;
+}
+
+
+@media screen and (max-width:780px){
+    html{
+        font-size: 13px;
+    }
+
+    .btnCalcular{
+        width: 100%;
+    }
+}
